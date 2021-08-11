@@ -58,3 +58,5 @@ if (questionFive === 'yes' || questionFive === 'y') {
   alert('Fascinating.')
 }
 
+let exitMSG = alert('Thanks for playing,' + introA + ' !')
+
