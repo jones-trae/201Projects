@@ -46,14 +46,14 @@ if (questionThree === 'yes' || questionThree === 'y') {
   alert('Fascinating.')
 }
 
-let questionFourA = prompt('Was Valton in the Army?'); 
- //console.log(questionFourA);
-let questionFour = questionFourA.toLowerCase();
+let questionFiveA = prompt('Does he have a mustache in his picture?'); 
+ //console.log(questionFiveA);
+let questionFive = questionFiveA.toLowerCase();
 
-if (questionFour === 'yes' || questionFour === 'y') {
-  alert('That is almost right!!!!')
-} else if (questionFour === 'no' || questionFour === 'n') {
-  alert('Correct! NAVY BABY.')
+if (questionFive === 'yes' || questionFive === 'y') {
+  alert('Nooo, sadly!!!!')
+} else if (questionFive === 'no' || questionFive === 'n') {
+  alert('That is correct.')
 } else {
   alert('Fascinating.')
 }
