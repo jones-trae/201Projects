@@ -31,18 +31,21 @@ function knowV(){
 }
 knowV()
 
-let questionTwoA = prompt('Did Valton go to college?'); 
- //console.log(questionTwoA);
-let questionTwo = questionTwoA.toLowerCase();
+function gradS() {
+  let questionTwoA = prompt('Did Valton go to college?'); 
+  //console.log(questionTwoA);
+  let questionTwo = questionTwoA.toLowerCase();
 
-if (questionTwo === 'yes' || questionTwo === 'y') {
-  correctAns++
-  alert('That is right!!!!')
-} else if (questionTwo === 'no' || questionTwo === 'n') {
-  alert ('Daw, he did, a little.')
-} else {
-  alert('Fascinating.')
+  if (questionTwo === 'yes' || questionTwo === 'y') {
+    correctAns++
+    alert('That is right!!!!')
+  } else if (questionTwo === 'no' || questionTwo === 'n') {
+    alert ('Daw, he did, a little.')
+  } else {
+    alert('Fascinating.')
+  }
 }
+gradS()
 
 let questionThreeA = prompt('Does he want a motorcycle?'); 
  //console.log(questionThreeA);
