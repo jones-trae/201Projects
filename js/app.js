@@ -79,18 +79,21 @@ function doesHeHike() {
 }
 doesHeHike()
 
-let questionFiveA = prompt('Does he have a mustache in his picture?'); 
- //console.log(questionFiveA);
-let questionFive = questionFiveA.toLowerCase();
+function mustacheMan() {
+  let questionFiveA = prompt('Does he have a mustache in his picture?'); 
+  //console.log(questionFiveA);
+  let questionFive = questionFiveA.toLowerCase();
 
-if (questionFive === 'yes' || questionFive === 'y') {
-  alert('Nooo, sadly!!!!')
-} else if (questionFive === 'no' || questionFive === 'n') {
-  correctAns++
-  alert('That is correct.')
-} else {
-  alert('Fascinating.')
+  if (questionFive === 'yes' || questionFive === 'y') {
+    alert('Nooo, sadly!!!!')
+  } else if (questionFive === 'no' || questionFive === 'n') {
+    correctAns++
+    alert('That is correct.')
+  } else {
+    alert('Fascinating.')
+  }
 }
+mustacheMan()
 
 let numGuess;
 let goodGuess = 4;
