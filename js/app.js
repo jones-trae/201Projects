@@ -2,6 +2,8 @@
 
 console.log('test');
 
+let correctAns = 0
+
 
 
 
@@ -19,6 +21,7 @@ let questionOne = questionOneA.toLowerCase();
 
 
 if (questionOne === 'yes' || questionOne === 'y') {
+  correctAns++;
   alert('Really? Well you can always know more.')
 } else if (questionOne === 'no' || questionOne === 'n') {
   alert('Does anyone REALLY truly know the OTHER');
@@ -31,6 +34,7 @@ let questionTwoA = prompt('Did Valton go to college?');
 let questionTwo = questionTwoA.toLowerCase();
 
 if (questionTwo === 'yes' || questionTwo === 'y') {
+  correctAns++
   alert('That is right!!!!')
 } else if (questionTwo === 'no' || questionTwo === 'n') {
   alert ('Daw, he did, a little.')
@@ -43,6 +47,7 @@ let questionThreeA = prompt('Does he want a motorcycle?');
 let questionThree = questionThreeA.toLowerCase();
 
 if (questionThree === 'yes' || questionThree === 'y') {
+  correctAns++
   alert('That is right!!!!')
 } else if (questionThree === 'no' || questionThree ===  'n') {
   alert('Unfortunately, he really does.')
@@ -57,6 +62,7 @@ let questionFour = questionFourA.toLowerCase();
 if (questionFour === 'yes' || questionFour === 'y') {
   alert('That is incorrect!!!!')
 } else if (questionFour === 'no' || questionFour ===  'n') {
+  correctAns++
   alert('Unfortunately, he does not.')
 } else {
   alert('Fascinating.')
@@ -69,6 +75,7 @@ let questionFive = questionFiveA.toLowerCase();
 if (questionFive === 'yes' || questionFive === 'y') {
   alert('Nooo, sadly!!!!')
 } else if (questionFive === 'no' || questionFive === 'n') {
+  correctAns++
   alert('That is correct.')
 } else {
   alert('Fascinating.')
@@ -92,26 +99,28 @@ while (intNumGuess !== goodGuess && attempts < 4) {
   }
 }
 if (intNumGuess === goodGuess) {
+  correctAns++
   alert('Noice!');
 } else if (intNumGuess !== goodGuess) {
   alert('Better luck next time...it was ' + goodGuess + '!')
 }
 
 
-let attempts = 0;
+let tries = 0;
 let favHike = false;
 let bestHike = ['Mount Jupiter', 'Gold Mountain', 'Green Mountain', 'Tubal Cain Mine', 'Upper Snohomish', 'Bridal Veil Falls', 'Hurricane Ridge', 'The Hoh Rainforest', 'Table Mountain', 'The Brothers'];
 
-while (attempts < 5 && favHike === false) {
+while (tries < 5 && favHike === false) {
   let hike = prompt('Can you remember one of my favorite hikes?');
   for (let i = 0; i < bestHike.length; i++){
     let currentHike = bestHike[i];
     if(hike === currentHike){
+      correctAns++
       alert('Oh my god I LOVE that hike!');
       favHike = true;
     }
   }
-  attempts++;
+  tries++;
   if(favHike === false){
     alert('Never been there. Lets go?');
   }
@@ -122,5 +131,7 @@ while (attempts < 5 && favHike === false) {
 
 
 
-let exitMSG = alert('Thanks for playing,' + introA + ' !')
+
+
+let exitMSG = alert('Thanks for playing,' + introA + ' you got ' + correctAns + ' questions correct!')
 
