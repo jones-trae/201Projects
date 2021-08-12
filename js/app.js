@@ -95,30 +95,32 @@ function mustacheMan() {
 }
 mustacheMan()
 
-let numGuess;
-let goodGuess = 4;
-let attempts = 0;
-let intNumGuess;
+function numberGame() {
+  let numGuess;
+  let goodGuess = 4;
+  let attempts = 0;
+  let intNumGuess;
 
-while (intNumGuess !== goodGuess && attempts < 4) {
-  numGuess = prompt('Try to pick a number 1 to 10. You have ' + (4-attempts) + ' left.');
-  intNumGuess = parseInt(numGuess)
-  attempts++
-  if (intNumGuess !== goodGuess) {
-    if (intNumGuess > goodGuess) {
-      alert('Too high! Try again.')
-    }else {
-      alert('Too low! Try again')
+  while (intNumGuess !== goodGuess && attempts < 4) {
+    numGuess = prompt('Try to pick a number 1 to 10. You have ' + (4-attempts) + ' left.');
+    intNumGuess = parseInt(numGuess)
+    attempts++
+    if (intNumGuess !== goodGuess) {
+      if (intNumGuess > goodGuess) {
+        alert('Too high! Try again.')
+      }else {
+        alert('Too low! Try again')
+      }
     }
   }
+  if (intNumGuess === goodGuess) {
+    correctAns++
+    alert('Noice!');
+  } else if (intNumGuess !== goodGuess) {
+    alert('Better luck next time...it was ' + goodGuess + '!')
+  }
 }
-if (intNumGuess === goodGuess) {
-  correctAns++
-  alert('Noice!');
-} else if (intNumGuess !== goodGuess) {
-  alert('Better luck next time...it was ' + goodGuess + '!')
-}
-
+numberGame()
 
 let tries = 0;
 let favHike = false;
