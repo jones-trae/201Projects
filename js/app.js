@@ -122,26 +122,28 @@ function numberGame() {
 }
 numberGame()
 
-let tries = 0;
-let favHike = false;
-let bestHike = ['Mount Jupiter', 'Gold Mountain', 'Green Mountain', 'Tubal Cain Mine', 'Upper Snohomish', 'Bridal Veil Falls', 'Hurricane Ridge', 'The Hoh Rainforest', 'Table Mountain', 'The Brothers'];
+function listGame() {
+  let tries = 0;
+  let favHike = false;
+  let bestHike = ['Mount Jupiter', 'Gold Mountain', 'Green Mountain', 'Tubal Cain Mine', 'Upper Snohomish', 'Bridal Veil Falls', 'Hurricane Ridge', 'The Hoh Rainforest', 'Table Mountain', 'The Brothers'];
 
-while (tries < 5 && favHike === false) {
-  let hike = prompt('Can you remember one of my favorite hikes?');
-  for (let i = 0; i < bestHike.length; i++){
-    let currentHike = bestHike[i];
-    if(hike === currentHike){
-      correctAns++
-      alert('Oh my god I LOVE that hike!');
-      favHike = true;
+  while (tries < 5 && favHike === false) {
+    let hike = prompt('Can you remember one of my favorite hikes?');
+    for (let i = 0; i < bestHike.length; i++){
+      let currentHike = bestHike[i];
+      if(hike === currentHike){
+        correctAns++
+        alert('Oh my god I LOVE that hike!');
+        favHike = true;
+      }
+    }
+    tries++;
+    if(favHike === false){
+      alert('Never been there. Lets go?');
     }
   }
-  tries++;
-  if(favHike === false){
-    alert('Never been there. Lets go?');
-  }
 }
-
+listGame()
 
 
 
