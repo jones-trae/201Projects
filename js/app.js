@@ -14,20 +14,22 @@ let introA = prompt('Before you get to know Valton, what is your name?');
 
 
 
+function knowV(){
+  let questionOneA = prompt('Do you feel like you REALLY know Valton?'); 
+  //console.log(questionOneA);
+  let questionOne = questionOneA.toLowerCase();
 
-let questionOneA = prompt('Do you feel like you REALLY know Valton?'); 
- //console.log(questionOneA);
-let questionOne = questionOneA.toLowerCase();
 
-
-if (questionOne === 'yes' || questionOne === 'y') {
-  correctAns++;
-  alert('Really? Well you can always know more.')
-} else if (questionOne === 'no' || questionOne === 'n') {
-  alert('Does anyone REALLY truly know the OTHER');
-} else {
-  alert('Fascinating.')
+  if (questionOne === 'yes' || questionOne === 'y') {
+    correctAns++;
+    alert('Really? Well you can always know more.')
+  } else if (questionOne === 'no' || questionOne === 'n') {
+    alert('Does anyone REALLY truly know the OTHER');
+  } else {
+    alert('Fascinating.')
+  }
 }
+knowV()
 
 let questionTwoA = prompt('Did Valton go to college?'); 
  //console.log(questionTwoA);
