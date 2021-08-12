@@ -63,19 +63,21 @@ function motoY() {
 }
 motoY()
 
+function doesHeHike() {
+  let questionFourA = prompt('Does he hike enough?'); 
+  //console.log(questionFourA);
+  let questionFour = questionFourA.toLowerCase();
 
-let questionFourA = prompt('Does he hike enough?'); 
- //console.log(questionFourA);
-let questionFour = questionFourA.toLowerCase();
-
-if (questionFour === 'yes' || questionFour === 'y') {
-  alert('That is incorrect!!!!')
-} else if (questionFour === 'no' || questionFour ===  'n') {
-  correctAns++
-  alert('Unfortunately, he does not.')
-} else {
-  alert('Fascinating.')
+  if (questionFour === 'yes' || questionFour === 'y') {
+    alert('That is incorrect!!!!')
+  } else if (questionFour === 'no' || questionFour ===  'n') {
+    correctAns++
+    alert('Unfortunately, he does not.')
+  } else {
+    alert('Fascinating.')
+  }
 }
+doesHeHike()
 
 let questionFiveA = prompt('Does he have a mustache in his picture?'); 
  //console.log(questionFiveA);
