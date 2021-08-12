@@ -47,18 +47,22 @@ function gradS() {
 }
 gradS()
 
-let questionThreeA = prompt('Does he want a motorcycle?'); 
- //console.log(questionThreeA);
-let questionThree = questionThreeA.toLowerCase();
+function motoY() {
+  let questionThreeA = prompt('Does he want a motorcycle?'); 
+  //console.log(questionThreeA);
+  let questionThree = questionThreeA.toLowerCase();
 
-if (questionThree === 'yes' || questionThree === 'y') {
-  correctAns++
-  alert('That is right!!!!')
-} else if (questionThree === 'no' || questionThree ===  'n') {
-  alert('Unfortunately, he really does.')
-} else {
-  alert('Fascinating.')
+  if (questionThree === 'yes' || questionThree === 'y') {
+    correctAns++
+    alert('That is right!!!!')
+  } else if (questionThree === 'no' || questionThree ===  'n') {
+    alert('Unfortunately, he really does.')
+  } else {
+    alert('Fascinating.')
+  }
 }
+motoY()
+
 
 let questionFourA = prompt('Does he hike enough?'); 
  //console.log(questionFourA);
